@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+            <div class="navdiv">
+                <div class="leftbar"><a href="" class="leftbar" id="RecipeBook">Recipe Book</a></div>
+                <ul id="rightbar">
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Recipes</li></a>
+                    <a href=""><li>Meals</li></a>
+                    <input class="searchbar" type="text" placeholder="search...">
+                    <li><button class="button"><i class="fa fa-magnifying-glass"></i></i></button></li>
+                </ul>
+            </div>
+    </nav>
+    <hr class="hr">
+    </header>
+
+    <main>
+        <div id="secondNavBar">
+            <div id="heading">MY RECIPES</div>
+            <div id="buttonDiv"><button class="addNewRecipe">Add New Recipe</button></div>
+        </div>
+        <div id="mainContent">
+            <!-- Firsrt Recipe -->
+            <div class="recipe" id="Original">
+                <img src="Kadhai Paneer.jpg" id="image">
+                <div class="detail">
+                    <div class="recipeName">Chicken Curry</div>
+                    <div class="ingredeints">
+                        <li>Water,</li>
+                        <li>Maggie,</li>
+                        <li>Maggie Masala</li>
+                    </div>
+                </div>
+            <button class="editRecipeButton" id="editRecipe">Edit Recipe</button>
+            </div>
+        </div>
+    </main>
+
+        <!-- Form To Add Recipe -->
+        <div class="formDiv">
+            <form class="popup" id="addRecipeForm">
+                <div class="closeBtn"><i class="fa-regular fa-circle-xmark"></i></div>
+                <h2 class="heading">Add Your New Recipe</h2>
+                <div class="form-element">
+                    <label for="recipeName">Recipe Name </label>
+                    <input id="recipeName" type="text" placeholder="Enter Recipe Name" required>
+                </div>
+
+                <div class="form-element">
+                    <label for="ingredients">Ingredients </label>
+                    <textarea id="ingredients" required></textarea>
+                </div>
+
+                <div class="form-element">
+                    <label for="recipeImage">Upload Image </label>
+                    <input id="recipeImage" type="file" required>
+                </div>
+
+                <button type="submit" class="addRecipe">Add Recipe</button>
+            </form>
+        </div>
+        <div class="clearBTnDiv"><button id="clearStorage">Clear Added Recipes</button></div>
+</body>
+<script src="script.js"></script>
+</html>
